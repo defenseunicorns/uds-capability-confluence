@@ -41,27 +41,22 @@ application:
             memory: "6Gi"
         jvm:
           maxHeap: "3g"
-    database:
-      url: "jdbc:postgresql://confluence-postgres.confluence.svc.cluster.local:5432/confluencedb"
-      credentials:
-        secretName: "confluence-postgres"
-        usernameSecretKey: "username"
-        passwordSecretKey: "password"
-      # additionalEnvironmentVariables:
-      #   - name: ATL_DB_TYPE
-      #     value: "postgresql"
-      #   - name: ATL_JDBC_URL
-      #     value: "jdbc:postgresql://acid-confluence.confluence.svc.cluster.local:5432/confluence"
-      #   - name: ATL_JDBC_USER
-      #     valueFrom:
-      #       secretKeyRef:
-      #         name: "confluence.acid-confluence.credentials.postgresql.acid.zalan.do"
-      #         key: "username"
-      #   - name: ATL_JDBC_PASSWORD
-      #     valueFrom:
-      #       secretKeyRef:
-      #         name: "confluence.acid-confluence.credentials.postgresql.acid.zalan.do"
-      #         key: "password"
+
+      additionalEnvironmentVariables:
+        - name: ATL_DB_TYPE
+          value: "postgres72"
+        - name: ATL_DB_DRIVER
+          value: "org.postgresql.Driver"
+        - name: ATL_JDBC_URL
+          value: "jdbc:postgresql://confluence-postgres.confluence.svc.cluster.local:5432/confluencedb"
+        - name: ATL_JDBC_USER
+          value: "confluence"
+        - name: ATL_JDBC_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: "confluence-postgres"
+              key: "password"
+
       localHome:
         persistentVolumeClaim:
           create: true
