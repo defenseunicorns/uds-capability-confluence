@@ -47,6 +47,9 @@ jobs:
           username: ${{ secrets.REGISTRY1_USERNAME }}
           password: ${{ secrets.REGISTRY1_PASSWORD }}
 
+      ####
+      # Build and publish dependency packages to use in a dev UDS Bundle
+      ####
       - name: Build confluence package
         run: zarf package create --confirm --no-progress
 
