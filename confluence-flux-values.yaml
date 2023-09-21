@@ -64,4 +64,10 @@ application:
           resources:
             requests:
               storage: 1Gi
+      
+    networkPolicies:
+      enabled: false
+      ingressLabels:
+        app: tenant-ingressgateway
+
 
