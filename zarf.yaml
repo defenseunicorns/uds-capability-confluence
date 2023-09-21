@@ -10,7 +10,7 @@ variables:
   - name: CONFLUENCE_DEPENDS_ON
     default: "[]"
   - name: CONFLUENCE_CREATE_NAMESPACE
-    default: "true"
+    default: "false"
   - name: DOMAIN
     default: "bigbang.dev"
 
