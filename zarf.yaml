@@ -38,3 +38,14 @@ components:
     images:
       - registry1.dso.mil/ironbank/atlassian/confluence-data-center/confluence-node:8.4.0
       - registry1.dso.mil/ironbank/big-bang/base:2.0.0
+    actions:
+      onDeploy:
+        after:
+          - wait:
+              cluster:
+                kind: helmRelease
+                name: confluence
+                condition: Ready
+                namespace: bigbang
+            maxTotalSeconds: 900
+            description: Confluence HelmRelease to be Ready
