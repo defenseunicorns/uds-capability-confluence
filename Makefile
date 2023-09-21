@@ -179,7 +179,6 @@ deploy/dubbd-k3d: | build/zarf ## Deploy the k3d flavor of DUBBD
 
 
 deploy/uds-capability-confluence: ## Deploy the confluence capability
-	cp zarf-config.yaml build/
 	cd build && ./zarf package deploy zarf-package-confluence-amd64-*.tar.zst --confirm
 
 ########################################################################
