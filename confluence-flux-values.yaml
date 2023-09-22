@@ -69,5 +69,5 @@ application:
       enabled: true
       ingressLabels:
         app: tenant-ingressgateway
-
-
+      controlPlaneCidr: 0.0.0.0/0
+      
