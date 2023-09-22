@@ -44,7 +44,7 @@ application:
 
       additionalEnvironmentVariables:
         - name: ATL_DB_TYPE
-          value: "postgres72"
+          value: "postgresql"
         - name: ATL_DB_DRIVER
           value: "org.postgresql.Driver"
         - name: ATL_JDBC_URL
