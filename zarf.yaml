@@ -3,7 +3,7 @@ kind: ZarfPackageConfig
 metadata:
   name: confluence
   description: "UDS confluence capability deployed via flux"
-  version: "0.0.2"
+  version: "0.0.3"
   architecture: amd64
 
 variables:
