@@ -50,7 +50,7 @@ application:
         - name: ATL_JDBC_URL
           value: "jdbc:postgresql://confluence-postgres.confluence.svc.cluster.local:5432/confluencedb"
         - name: ATL_JDBC_USER
-          value: "confluence"
+          value: ###ZARF_VAR_CONFLUENCE_DB_USERNAME###
         - name: ATL_JDBC_PASSWORD
           valueFrom:
             secretKeyRef:
