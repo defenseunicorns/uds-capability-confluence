@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
-          ref: main # ${{ github.head_ref }}
+          ref: ${{ github.head_ref }}
 
       - name: Lula Setup
         uses: defenseunicorns/lula-action/setup@095636b7880051e11b05f10a582fdd911526161c
