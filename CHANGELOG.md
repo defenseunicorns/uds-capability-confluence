@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.5](https://github.com/defenseunicorns/uds-capability-confluence/compare/v0.1.4...v0.1.5) (2024-01-24)
+
+
+### Features
+
+* add initial lula lint action ([#20](https://github.com/defenseunicorns/uds-capability-confluence/issues/20)) ([90b30c7](https://github.com/defenseunicorns/uds-capability-confluence/commit/90b30c74d83f0aa4ec404a840b92a5956f921195))
+* Update home dir config ([#22](https://github.com/defenseunicorns/uds-capability-confluence/issues/22)) ([4ae1d8a](https://github.com/defenseunicorns/uds-capability-confluence/commit/4ae1d8a0073f2cef1bacd40181dff42486071cd9))
+
 ## [0.1.4](https://github.com/defenseunicorns/uds-capability-confluence/compare/v0.1.3...v0.1.4) (2024-01-09)
 
 
