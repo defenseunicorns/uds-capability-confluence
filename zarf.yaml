@@ -17,6 +17,18 @@ variables:
     default: "confluencedb"
   - name: CONFLUENCE_DB_USERNAME
     default: "confluence"
+  - name: CONFLUENCE_LOCAL_HOME_ENABLED
+    default: "false"
+  - name: CONFLUENCE_LOCAL_HOME_SIZE
+    default: "128Gi"
+  - name: CONFLUENCE_RWO_STORAGE_CLASS
+    default: "local-path"
+  - name: CONFLUENCE_SHARED_HOME_ENABLED
+    default: "false"
+  - name: CONFLUENCE_SHARED_HOME_SIZE
+    default: "128Gi"
+  - name: CONFLUENCE_RWX_STORAGE_CLASS
+    default: "local-path"
   - name: DOMAIN
     default: "bigbang.dev"
 

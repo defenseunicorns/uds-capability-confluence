@@ -56,14 +56,21 @@ application:
             secretKeyRef:
               name: "confluence-postgres"
               key: "password"
-
+    volumes:
       localHome:
         persistentVolumeClaim:
-          create: true
-          # storageClassName: your-storage-class-here
+          create: ###ZARF_VAR_CONFLUENCE_LOCAL_HOME_ENABLED###
+          storageClassName: ###ZARF_VAR_CONFLUENCE_RWO_STORAGE_CLASS###
           resources:
             requests:
-              storage: 1Gi
+              storage: ###ZARF_VAR_CONFLUENCE_LOCAL_HOME_SIZE###
+      sharedHome:
+        persistentVolumeClaim:
+          create: ###ZARF_VAR_CONFLUENCE_SHARED_HOME_ENABLED###
+          storageClassName: ###ZARF_VAR_CONFLUENCE_RWX_STORAGE_CLASS###
+          resources:
+            requests:
+              storage: ###ZARF_VAR_CONFLUENCE_SHARED_HOME_SIZE###
 
     networkPolicies:
       enabled: true
