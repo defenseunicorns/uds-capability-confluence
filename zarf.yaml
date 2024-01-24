@@ -18,7 +18,7 @@ variables:
   - name: CONFLUENCE_DB_USERNAME
     default: "confluence"
   - name: CONFLUENCE_LOCAL_HOME_ENABLED
-    default: "true"
+    default: "false"
   - name: CONFLUENCE_LOCAL_HOME_SIZE
     default: "128Gi"
   - name: CONFLUENCE_RWO_STORAGE_CLASS
