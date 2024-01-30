@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.6](https://github.com/defenseunicorns/uds-capability-confluence/compare/v0.1.5...v0.1.6) (2024-01-30)
+
+
+### Miscellaneous
+
+* update confluence to 1.17.2-bb.0 ([443040e](https://github.com/defenseunicorns/uds-capability-confluence/commit/443040e76d2ce1ae7179cd3702bb5d4a288bceb2))
+* update zarf and dubbd ([#23](https://github.com/defenseunicorns/uds-capability-confluence/issues/23)) ([443040e](https://github.com/defenseunicorns/uds-capability-confluence/commit/443040e76d2ce1ae7179cd3702bb5d4a288bceb2))
+
 ## [0.1.5](https://github.com/defenseunicorns/uds-capability-confluence/compare/v0.1.4...v0.1.5) (2024-01-24)
 
 
